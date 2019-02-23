@@ -6,6 +6,6 @@ describe ('Peep', function(){
   });
 
   it('creates a peep', function() {
-    expect(testpeep.addPeep()).toEqual("testingpeep");
+    expect(testpeep.getPeeps()).toEqual("testingpeep");
   });
 });

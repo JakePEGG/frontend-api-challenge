@@ -1,6 +1,6 @@
 (function(exports) {
   function PeepList(){
-    this.Peeps = [];
+    this.peeps = [];
   };
 
   PeepList.prototype.showPeeps = function(peeplist) {
