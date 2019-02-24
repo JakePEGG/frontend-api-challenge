@@ -5,12 +5,11 @@ function isaPeepView() {
 };
   isaPeepView();
 
-
   function displayPeepList() {
     let peeplist = new PeepList();
     let peeplistview = new PeepListView(peeplist)
     let peep = new Peep("Deadlift")
-    peeplist.addPeep(note)
-    assert.isTrue(peeplistview.getHTML() === ("<ul><li><div>" "deadlift" "</div></li><li><div>"))
+    peeplist.addPeep(peep)
+    assert.isTrue(peeplistview.getHTML() === ("<ul>", "<li><div>Deadlift</div></li>", "</ul>"))
   };
   displayPeepList();
